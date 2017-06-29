@@ -1,1 +1,3 @@
 # barchecker
+
+test connection
