@@ -7,6 +7,16 @@
       <title>Bar Checker</title>
    </head>
    <body>
+		<script type="text/javascript" src="/controller/Controller.js"></script>
+
+   		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')">Typ</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">Adresse</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Produkte</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Fertig</button>
+		</div>
+
+   		<div id="London" class="tabcontent">
    		<div>
    			<h3>Meintest du?</h3>
    			<button type="submit">Beispiel 1 <br/> Mustermannstraße 13 <img  src="/music-player.svg" alt="BeerIcon" width="20em" height="20em"> <br/> 22653 Hamburg</button><br/>
@@ -54,7 +64,8 @@
    			Hausnummer<br/>
    			<input type="text" name="Hausnummer"><br/>
 		</div>
-		
+		</div>
+		<div id="Paris" class="tabcontent">
 		<div>
    			<img src="http://www.irie-revoltes.com/sites/default/files/vca-logo-web.png" alt="VcALogo" style="width:20%"><br/>
    			<h2> VcA<br/>Mineralwasser </h2>
@@ -124,6 +135,6 @@
    			Geile Sache. <br/> Danke für's Anlegen!<br/>
 			<button type="button">Weiter zum Gewerbemenü</button><br/>
 		</div>
-		
+		</div>
    </body>
 </html>
