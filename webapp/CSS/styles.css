@@ -1,0 +1,27 @@
+/* 
+1) Design has to be responsive - SIZE!!!
+2) Font-family - where the font is comming from?
+*/
+
+body {
+	font-family: verdana;
+	text-align: center;
+}
+
+h3 {
+	font-size:100%;
+}
+
+button {
+	background-color: white;
+	border-color:black;
+}
+
+button.shadow {
+	
+}
+
+button.smallbutton {
+	border-style:solid;
+	border-radius: 10px;
+}
