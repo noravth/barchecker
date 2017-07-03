@@ -18,3 +18,39 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// to hide parts of the page with jQuery
+$(document).ready(function(){
+	$("#Tabs").hide();
+	
+	$("#AdresseHinzufügen").click(function(){
+    	$("#Tabs").show();
+        
+    });
+	
+	$("#TypTab").click(function(){
+    	$("#Typ").show();
+        
+    });
+    
+    $("#AdresseTab").click(function(){
+    	$("#adressetab1").show();
+        $("#adressetab2").hide();
+    });
+    
+    $("#show").click(function(){
+        $("#adressetab2").show();
+        $("#adressetab1").hide();
+    });
+    
+    $("#ProdukteTab").click(function(){
+    	$("#Produkte").show();
+        
+    });
+    
+    $("#Fertig").click(function(){
+    	$("#Fertig").show();
+       
+    });
+    
+});
