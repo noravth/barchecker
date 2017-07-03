@@ -35,14 +35,55 @@ $(document).ready(function(){
     	$("#Typ").show();
     });
     
+    $("#typ1").click(function(){
+    	$("#Typ").hide();
+    	$("#Adresse").show();
+    	$("#adressetab2").hide();
+    });
+    $("#typ2").click(function(){
+    	$("#Typ").hide();
+    	$("#Adresse").show();
+    	$("#adressetab2").hide();
+    });
+    $("#typ3").click(function(){
+    	$("#Typ").hide();
+    	$("#Adresse").show();$("#adressetab2").hide();
+    });
+    $("#typ4").click(function(){
+    	$("#Typ").hide();
+    	$("#Adresse").show();
+    	$("#adressetab2").hide();
+    });
+    $("#typ5").click(function(){
+    	$("#Typ").hide();
+    	$("#Adresse").show();
+    	$("#adressetab2").hide();
+    });
+    $("#typ6").click(function(){
+    	$("#Typ").hide();
+    	$("#Adresse").show();
+    	$("#adressetab2").hide();
+    });
+    
     $("#AdresseTab").click(function(){
-    	$("#adressetab1").show();
+    	$("#Adresse").show();
         $("#adressetab2").hide();
     });
     
     $("#manuell").click(function(){
         $("#adressetab2").show();
         $("#adressetab1").hide();
+    });
+    
+    $("#weiterAdresse").click(function(){
+    	$("#Adresse").hide();
+    	$("#Produkte").show();
+    	$("#produktetab1").show();
+    	$("#produktetab3").hide();
+    	$("#produktetab2").hide();
+    	$("#produktetab4").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();	
     });
     
     $("#ProdukteTab").click(function(){
@@ -103,6 +144,35 @@ $(document).ready(function(){
     	$("#Produkte").hide();
     	$("#Fertig").show();
     });
+    
+     $("#InteresseKloP").click(function(){
+    	$("#produktetab6").show();
+    	$("#produktetab2").hide();
+    	$("#produktetab4").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab3").hide();	
+    });
+    
+    $("#keinInteresseKloP").click(function(){
+    	$("#produktetab5").show();
+    	$("#produktetab3").hide();
+    	$("#produktetab4").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab2").hide();
+    	$("#produktetab6").hide();	
+    });
+    
+    $("#weiterKeinInteresseKloP").click(function(){
+    	$("#Produkte").hide();
+    	$("#Fertig").show();	
+    });
+    
+    $("#VcAMitarbeiterSchicken2").click(function(){
+    	$("#Produkte").hide();
+    	$("#Fertig").show();	
+    });
+
     
     $("#Fertig").click(function(){
     	$("#Fertig").show();
