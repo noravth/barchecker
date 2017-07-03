@@ -1,8 +1,6 @@
 /* 
 1) Design has to be responsive - SIZE!!!
-2) Font-family - where the font is comming from?
 */
-
 
 body {
 	font-family: "comic sans ms", sanf-serif;
@@ -16,11 +14,13 @@ body {
 	overflow: auto;
 }
 
+h2.interesse {
+	font-style: italic;
+}
+
 h3 {
 	font-size:70px;
 }
-
-
 
 button.tablinks {
 	border-style: none none solid none;
@@ -34,16 +34,20 @@ button {
 	padding: 1em 1em;
 }
 
-h2.interesse {
-	font-style: italic;
-}
-
 button.shadow {
   border: 0.2em solid black;
   border-style: outset;
   box-shadow: 5px 5px 2.5px black;
   margin: 2%;
   width: 70%;
+}
+
+button.smallbutton {
+	border-style:solid;
+	border-radius: 10px;
+	padding: 0.5em;
+	margin: 2%;
+    display: inline-block;
 }
 
 input {
@@ -54,15 +58,6 @@ input {
 
 div.checkbox {
 	font-size: 20%;
-}
-
-button.smallbutton {
-	border-style:solid;
-	border-radius: 10px;
-	padding: 0.5em;
-	margin: 2%;
-    display: inline-block;
-
 }
 
 img.icon {
