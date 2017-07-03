@@ -10,7 +10,7 @@
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/controller/Controller.js"></script>
 		
-		<div>
+		<div id="MeintestDu">
 	   		<h3>Meintest du?</h3>
 	   		<button type="submit">Beispiel 1 <br/> Mustermannstraße 13 <img  src="/music-player.svg" alt="BeerIcon" width="20em" height="20em"> <br/> 22653 Hamburg</button><br/>
 	   		<button type="submit">Beispiel 2 <br/> Hello World Straße 21 <img  src="/restaurant-interface-symbol-of-fork-and-knife-couple.svg" alt="BeerIcon" width="20em" height="20em"> <br/> 22653 Hamburg</button><br/>
@@ -27,23 +27,19 @@
 			</div>
 	
 	   		<div id="Typ" class="tabcontent">
-				
-		   		<div>
-		   			<h3>Wie lässt sich die <br/> Location kategorisieren?</h3>
-		   			<button class="smallbutton" type="submit"><img  src="/beer-jar-black-silhouette.svg" alt="BeerIcon" width="20em" height="20em"></button>
-		   			<div class="price2">Bar</div>
-		   			<button class="smallbutton" type="submit"><img  src="/music-player.svg" alt="BeerIcon" width="20em" height="20em"></button>
-		   			<div class="price2">Club</div>
-		   			<button class="smallbutton" type="submit"><img  src="/restaurant-interface-symbol-of-fork-and-knife-couple.svg" alt="BeerIcon" width="20em" height="20em"></button><br/>
-		     		<div class="price2">Restaurant</div><br/>
-		     		<button class="smallbutton" type="submit"><img  src="/tea-cup-filled-shape.svg" alt="BeerIcon" width="20em" height="20em"></button>
-		   			<div class="price2">Cafe</div>
-		   			<button class="smallbutton" type="submit"><img  src="/shopping-cart.svg" alt="BeerIcon" width="20em" height="20em"></button>
-		   			<div class="price2">Kiosk</div>
-		   			<button class="smallbutton" type="submit"><img  src="/question-mark.svg" alt="BeerIcon" width="20em" height="20em"></button>
-					<div class="price2">Anderes</div>
-					
-				</div>
+		   		<h3>Wie lässt sich die <br/> Location kategorisieren?</h3>
+		   		<button class="smallbutton" type="submit"><img  src="/beer-jar-black-silhouette.svg" alt="BeerIcon" width="20em" height="20em"></button>
+		   		<div class="price2">Bar</div>
+				<button class="smallbutton" type="submit"><img  src="/music-player.svg" alt="BeerIcon" width="20em" height="20em"></button>
+		   		<div class="price2">Club</div>
+		   		<button class="smallbutton" type="submit"><img  src="/restaurant-interface-symbol-of-fork-and-knife-couple.svg" alt="BeerIcon" width="20em" height="20em"></button><br/>
+		    	<div class="price2">Restaurant</div><br/>
+		     	<button class="smallbutton" type="submit"><img  src="/tea-cup-filled-shape.svg" alt="BeerIcon" width="20em" height="20em"></button>
+		   		<div class="price2">Cafe</div>
+		   		<button class="smallbutton" type="submit"><img  src="/shopping-cart.svg" alt="BeerIcon" width="20em" height="20em"></button>
+		   		<div class="price2">Kiosk</div>
+		   		<button class="smallbutton" type="submit"><img  src="/question-mark.svg" alt="BeerIcon" width="20em" height="20em"></button>
+				<div class="price2">Anderes</div>
 	   		</div>
 	   		
 	   		<div id="Adresse" class="tabcontent">
@@ -54,7 +50,7 @@
 		   			<input type="text" name="Barname"><br/>
 		   			Adresse<br/>
 		   			<button type="button">Standort verwenden</button><br/>
-		   			<button id="show" type="button">manuell eingeben</button>
+		   			<button id="manuell" type="button">manuell eingeben</button>
 				</div>
 				
 				<div id="adressetab2">
@@ -73,15 +69,15 @@
 			</div>
 			
 			<div id="Produkte" class="tabcontent">
-				<div>
+				<div id="produktetab1">
 		   			<img src="http://www.irie-revoltes.com/sites/default/files/vca-logo-web.png" alt="VcALogo" style="width:20%"><br/>
 		   			<h2> VcA<br/>Mineralwasser </h2>
-		   			<button type="button">vorhanden</button><br/>
-		   			<button type="button">hat Interesse</button><br/>
-		   			<button type="button">kein Interesse</button><br/>
+		   			<button id="vorhandenWasser" type="button">vorhanden</button><br/>
+		   			<button id="InteresseWasser" type="button">hat Interesse</button><br/>
+		   			<button id="keinInteresseWasser" type="button">kein Interesse</button><br/>
 				</div>
 				
-				<div>
+				<div id="produktetab2">
 		   			<img src="http://www.irie-revoltes.com/sites/default/files/vca-logo-web.png" alt="VcALogo" style="width:20%"><br/>
 		   			<h2 class="interesse"> "Kein Interesse" </h2>
 		   			Aus welchem Grund?<br/>
@@ -90,10 +86,10 @@
 					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
 					<input type="checkbox" name="zufrieden"> zufrieden mit bisherigem Produkt<br/>
 					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
-					<button type="button">Weiter</button><br/>
+					<button id="weiterKeinInteresseWasser" type="button">Weiter</button><br/>
 				</div>
 				
-				<div>
+				<div id="produktetab3">
 		   			<img src="http://www.irie-revoltes.com/sites/default/files/vca-logo-web.png" alt="VcALogo" style="width:20%"><br/>
 		   			<h2 class="interesse"> "Hat Interesse" </h2>
 		   			Warum bisher noch nicht?<br/>
@@ -102,18 +98,18 @@
 					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
 					<input type="checkbox" name="weissnichtwie"> weiß nicht wie<br/>
 					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
-					<button type="button">VcA Mitarbeiter vorbeischicken</button><br/>
+					<button id="VcAMitarbeiterSchicken1" type="button">VcA Mitarbeiter vorbeischicken</button><br/>
 				</div>
 				
-				<div>
+				<div id="produktetab4">
 		   			<img src="/man-sitting-on-the-toilet.svg" alt="VcALogo" style="width:10%"><br/>
 		   			<h2> Goldeimer<br/>Klopapier </h2>
-		   			<button type="button">vorhanden</button><br/>
-		   			<button type="button">hat Interesse</button><br/>
-		   			<button type="button">kein Interesse</button><br/>
+		   			<button id="vorhandenKloP" type="button">vorhanden</button><br/>
+		   			<button id="InteresseKloP" type="button">hat Interesse</button><br/>
+		   			<button id="keinInteresseKloP" type="button">kein Interesse</button><br/>
 				</div>
 				
-				<div>
+				<div id="produktetab5">
 		   			<img src="/man-sitting-on-the-toilet.svg" alt="VcALogo" style="width:10%"><br/>
 		   			<h2 class="interesse"> "Kein Interesse" </h2>
 		   			Aus welchem Grund?<br/>
@@ -122,10 +118,10 @@
 					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
 					<input type="checkbox" name="zufrieden"> zufrieden mit bisherigem Produkt<br/>
 					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
-					<button type="button">Weiter</button><br/>
+					<button id="weiterKeinInteresseKloP" type="button">Weiter</button><br/>
 				</div>
 				
-				<div>
+				<div id="produktetab6">
 		   			<img src="/man-sitting-on-the-toilet.svg" alt="VcALogo" style="width:10%"><br/>
 		   			<h2 class="interesse"> "Hat Interesse" </h2>
 		   			Warum bisher noch nicht?<br/>
@@ -134,7 +130,7 @@
 					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
 					<input type="checkbox" name="weissnichtwie"> weiß nicht wie<br/>
 					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
-					<button type="button">VcA Mitarbeiter vorbeischicken</button><br/>
+					<button id="VcAMitarbeiterSchicken2" type="button">VcA Mitarbeiter vorbeischicken</button><br/>
 				</div>
 			</div>
 			<div id="Fertig" class="tabcontent">	

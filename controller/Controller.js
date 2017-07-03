@@ -25,12 +25,14 @@ $(document).ready(function(){
 	
 	$("#AdresseHinzufügen").click(function(){
     	$("#Tabs").show();
-        
+    	$("#MeintestDu").hide();
+        $("#Adresse").hide();
+    	$("#Produkte").hide();
+    	$("#Fertig").hide();
     });
 	
 	$("#TypTab").click(function(){
     	$("#Typ").show();
-        
     });
     
     $("#AdresseTab").click(function(){
@@ -38,19 +40,49 @@ $(document).ready(function(){
         $("#adressetab2").hide();
     });
     
-    $("#show").click(function(){
+    $("#manuell").click(function(){
         $("#adressetab2").show();
         $("#adressetab1").hide();
     });
     
     $("#ProdukteTab").click(function(){
-    	$("#Produkte").show();
-        
+    	$("#produktetab1").show();
+    	$("#produktetab2").hide();
+    	$("#produktetab3").hide();
+    	$("#produktetab4").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();
+    });
+    
+    $("#vorhandenWasser").click(function(){
+    	$("#produktetab4").show();
+    	$("#produktetab2").hide();
+    	$("#produktetab3").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();	
+    });
+    
+     $("#InteresseWasser").click(function(){
+    	$("#produktetab3").show();
+    	$("#produktetab2").hide();
+    	$("#produktetab4").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();	
+    });
+    
+    $("#keinInteresseWasser").click(function(){
+    	$("#produktetab2").show();
+    	$("#produktetab3").hide();
+    	$("#produktetab4").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();	
     });
     
     $("#Fertig").click(function(){
     	$("#Fertig").show();
-       
     });
     
 });
