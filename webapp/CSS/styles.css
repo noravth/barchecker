@@ -20,6 +20,10 @@ h3 {
 	font-size:70px;
 }
 
+button.tablinks {
+	border-style: none none solid none;
+}
+
 button {
 	font-family: "comic sans ms", sanf-serif;
 	font-size: 30px;
