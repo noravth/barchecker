@@ -20,6 +20,8 @@ h3 {
 	font-size:70px;
 }
 
+
+
 button.tablinks {
 	border-style: none none solid none;
 }
@@ -41,11 +43,34 @@ button.shadow {
   border-style: outset;
   box-shadow: 5px 5px 2.5px black;
   margin: 2%;
-  width: 90%;
+  width: 70%;
+}
+
+input {
+	border: 0.05em solid black;
+	width: 80%;
+	font-size:100%;
+}
+
+div.checkbox {
+	font-size: 20%;
 }
 
 button.smallbutton {
 	border-style:solid;
 	border-radius: 10px;
 	padding: 0.5em;
+	margin: 2%;
+    display: inline-block;
+
+}
+
+img.icon {
+	width: 25%;
+	margin-top:15%;
+}
+
+img.icon2 {
+	width: 50%;
+	margin-top:15%;
 }
