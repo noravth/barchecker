@@ -81,6 +81,29 @@ $(document).ready(function(){
     	$("#produktetab6").hide();	
     });
     
+    $("#weiterKeinInteresseWasser").click(function(){
+    	$("#produktetab4").show();
+    	$("#produktetab3").hide();
+    	$("#produktetab2").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();	
+    });
+    
+    $("#VcAMitarbeiterSchicken1").click(function(){
+    	$("#produktetab4").show();
+    	$("#produktetab3").hide();
+    	$("#produktetab2").hide();
+    	$("#produktetab1").hide();
+    	$("#produktetab5").hide();
+    	$("#produktetab6").hide();	
+    });
+
+    $("#vorhandenKloP").click(function(){
+    	$("#Produkte").hide();
+    	$("#Fertig").show();
+    });
+    
     $("#Fertig").click(function(){
     	$("#Fertig").show();
     });
