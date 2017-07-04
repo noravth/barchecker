@@ -21,6 +21,8 @@ function openCity(evt, cityName) {
 
 // to hide parts of the page with jQuery
 $(document).ready(function() {
+	$.mobile.loading().hide();
+
 	$("#Tabs").on("swiperight", function() {
 		$(this).hide();
 		$("#MeintestDu").show();
@@ -30,6 +32,7 @@ $(document).ready(function() {
 
 	$("#AdresseHinzufügen").click(function() {
 		$("#Tabs").show();
+		$("#Typ").show();
 		$("#MeintestDu").hide();
 		$("#Adresse").hide();
 		$("#Produkte").hide();
