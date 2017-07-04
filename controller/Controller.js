@@ -38,30 +38,37 @@ $(document).ready(function(){
     $("#typ1").click(function(){
     	$("#Typ").hide();
     	$("#Adresse").show();
+    	$("#adressetab1").show();
     	$("#adressetab2").hide();
     });
     $("#typ2").click(function(){
     	$("#Typ").hide();
     	$("#Adresse").show();
+    	$("#adressetab1").show();
     	$("#adressetab2").hide();
     });
     $("#typ3").click(function(){
     	$("#Typ").hide();
-    	$("#Adresse").show();$("#adressetab2").hide();
+    	$("#Adresse").show();
+    	$("#adressetab1").show();
+    	$("#adressetab2").hide();
     });
     $("#typ4").click(function(){
     	$("#Typ").hide();
     	$("#Adresse").show();
+    	$("#adressetab1").show();
     	$("#adressetab2").hide();
     });
     $("#typ5").click(function(){
     	$("#Typ").hide();
     	$("#Adresse").show();
+    	$("#adressetab1").show();
     	$("#adressetab2").hide();
     });
     $("#typ6").click(function(){
     	$("#Typ").hide();
     	$("#Adresse").show();
+    	$("#adressetab1").show();
     	$("#adressetab2").hide();
     });
     
