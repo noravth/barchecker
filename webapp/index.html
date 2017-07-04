@@ -7,9 +7,11 @@
       <title>Bar Checker</title>
    </head>
    <body>
-   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+   		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="/controller/Controller.js"></script>
-		
+
 		<div id="MeintestDu">
 	   		<h3>Meintest du?</h3>
 	   		<button type="submit" class="shadow">Beispiel 1 <br/> Mustermannstraße 13 <img  src="/music-player.svg" alt="BeerIcon" width="20em" height="20em"> <br/> 22653 Hamburg</button><br/>
@@ -94,13 +96,13 @@
 		   			<img class="icon2" src="http://www.irie-revoltes.com/sites/default/files/vca-logo-web.png" alt="VcALogo"><br/>
 		   			<h2 class="interesse"> "Kein Interesse" </h2>
 		   			Aus welchem Grund?<br/>
-		   				<div class="checkbox">
-					<input type="checkbox" name="zuteuer"> zu teuer<br/>
-					<input type="checkbox" name="unsympatisch"> unsympatisch<br/>
-					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
-					<input type="checkbox" name="zufrieden"> zufrieden mit bisherigem Produkt<br/>
-					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
-						</div>
+		   			<div class="checkbox">
+						<label><input class="cb" type="checkbox" name="zuteuer"/> zu teuer</label>
+						<label><input class="cb" type="checkbox" name="unsympatisch"/> unsympatisch</label>
+						<label><input class="cb" type="checkbox" name="nichtLieferbar"/> nicht im Lieferantensortiment</label>
+						<label><input class="cb" type="checkbox" name="zufrieden"/> zufrieden mit bisherigem Produkt</label>
+						<label><input class="cb" type="checkbox" name="sonstiger"/> sonstiger: <input type="text" name="sonstigerEIngabe"> </label>
+					</div>
 					<button id="weiterKeinInteresseWasser" type="button" class="shadow">Weiter</button><br/>
 				</div>
 				
@@ -108,11 +110,13 @@
 		   			<img class="icon2" src="http://www.irie-revoltes.com/sites/default/files/vca-logo-web.png" alt="VcALogo"><br/>
 		   			<h2 class="interesse"> "Hat Interesse" </h2>
 		   			Warum bisher noch nicht?<br/>
-					<input type="checkbox" name="neuerfahren"> neu davon erfahren<br/>
-					<input type="checkbox" name="finanziell"> finanziell nicht rentabel<br/>
-					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
-					<input type="checkbox" name="weissnichtwie"> weiß nicht wie<br/>
-					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
+		   			<div class="checkbox">
+						<label><input type="checkbox" name="neuerfahren"/> neu davon erfahren</label>
+						<label><input type="checkbox" name="finanziell"/> finanziell nicht rentabel</label>
+						<label><input type="checkbox" name="nichtLieferbar"/> nicht im Lieferantensortiment</label>
+						<label><input type="checkbox" name="weissnichtwie"/> weiß nicht wie</label>
+						<label><input type="checkbox" name="sonstiger"/> sonstiger: <input type="text" name="sonstigerEIngabe"></label>
+					</div>
 					<button id="VcAMitarbeiterSchicken1" type="button" class="shadow">VcA Mitarbeiter vorbeischicken</button><br/>
 				</div>
 				
@@ -128,11 +132,13 @@
 		   			<img class="icon" src="/man-sitting-on-the-toilet.svg" alt="VcALogo"><br/>
 		   			<h2 class="interesse"> "Kein Interesse" </h2>
 		   			Aus welchem Grund?<br/>
-					<input type="checkbox" name="zuteuer"> zu teuer<br/>
-					<input type="checkbox" name="unsympatisch"> unsympatisch<br/>
-					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
-					<input type="checkbox" name="zufrieden"> zufrieden mit bisherigem Produkt<br/>
-					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
+					<div class="checkbox">
+						<label><input class="cb" type="checkbox" name="zuteuer"/> zu teuer</label>
+						<label><input class="cb" type="checkbox" name="unsympatisch"/> unsympatisch</label>
+						<label><input class="cb" type="checkbox" name="nichtLieferbar"/> nicht im Lieferantensortiment</label>
+						<label><input class="cb" type="checkbox" name="zufrieden"/> zufrieden mit bisherigem Produkt</label>
+						<label><input class="cb" type="checkbox" name="sonstiger"/> sonstiger: <input type="text" name="sonstigerEIngabe"> </label>
+					</div>
 					<button id="weiterKeinInteresseKloP" type="button" class="shadow">Weiter</button><br/>
 				</div>
 				
@@ -140,14 +146,17 @@
 		   			<img class="icon" src="/man-sitting-on-the-toilet.svg" alt="VcALogo"><br/>
 		   			<h2 class="interesse"> "Hat Interesse" </h2>
 		   			Warum bisher noch nicht?<br/>
-					<input type="checkbox" name="neuerfahren"> neu davon erfahren<br/>
-					<input type="checkbox" name="finanziell"> finanziell nicht rentabel<br/>
-					<input type="checkbox" name="nichtLieferbar"> nicht im Lieferantensortiment<br/>
-					<input type="checkbox" name="weissnichtwie"> weiß nicht wie<br/>
-					<input type="checkbox" name="sonstiger"> sonstiger: <input type="text" name="sonstigerEIngabe"> <br/>
+					<div class="checkbox">
+						<label><input type="checkbox" name="neuerfahren"/> neu davon erfahren</label>
+						<label><input type="checkbox" name="finanziell"/> finanziell nicht rentabel</label>
+						<label><input type="checkbox" name="nichtLieferbar"/> nicht im Lieferantensortiment</label>
+						<label><input type="checkbox" name="weissnichtwie"/> weiß nicht wie</label>
+						<label><input type="checkbox" name="sonstiger"/> sonstiger: <input type="text" name="sonstigerEIngabe"></label>
+					</div>
 					<button id="VcAMitarbeiterSchicken2" type="button" class="shadow">VcA Mitarbeiter vorbeischicken</button><br/>
 				</div>
 			</div>
+			
 			<div id="Fertig" class="tabcontent">	
 				<div>
 		   			<img src="/beer-jar-black-silhouette.svg" alt="BeerIcon" style="width:10%"><br/>
